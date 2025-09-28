@@ -53,6 +53,30 @@
       <button id="aid-close">Close</button>
     </div>
   </div>
+  <!-- Help / Hint Modal -->
+<div id="helpModal" class="hidden fixed inset-0 z-[1000] flex items-center justify-center">
+  <!-- overlay -->
+  <div class="absolute inset-0 bg-black/60" data-close aria-label="Close overlay"></div>
+
+  <!-- panel -->
+  <div class="relative max-w-2xl w-[90%] bg-white rounded-xl shadow-xl p-4 md:p-6"
+       role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+    <button type="button" data-close
+            class="absolute right-2 top-2 rounded-md px-2 py-1 border border-gray-300 hover:bg-gray-100"
+            aria-label="Close">✕</button>
+
+    <h2 id="helpTitle" class="text-xl font-semibold mb-3">Hint</h2>
+    <div id="helpBody" class="prose max-w-none text-gray-800">Loading…</div>
+
+    <div class="mt-4 text-right">
+      <button type="button" data-close
+              class="rounded-md px-4 py-2 border border-gray-300 hover:bg-gray-100">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
 
   <script src="/static/js/app.js"></script>
 </body>
