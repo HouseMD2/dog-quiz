@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "id": "u10_001",
+      "level": "U10",
+      "question": "Which sense is usually strongest in dogs?",
+      "options": ["Sight", "Hearing", "Smell", "Taste"],
+      "answerIndex": 2,
+      "image": "/static/img/examples/nose.jpg",
+      "aid1": "Dogs have up to 300 million scent receptors.",
+      "aid2": "Their noses are far more sensitive than ours.",
+      "lesson": "Dogs explore the world mainly through smell. Some work as detection dogs.",
+      "lessonImage": "/static/img/examples/sniff.jpg"
+    },
+    {
+      "id": "u10_002",
+      "level": "U10",
+      "question": "What sound might a dog make when it’s happy?",
+      "options": ["Growl", "Purr", "Bark or soft whine", "Hiss"],
+      "answerIndex": 2,
+      "image": "/static/img/examples/happy.jpg",
+      "aid1": "Look at the tail and relaxed body too.",
+      "aid2": "Dogs don’t purr or hiss like cats.",
+      "lesson": "Happy dogs often have loose body language and a wagging tail.",
+      "lessonImage": "/static/img/examples/wag.jpg"
+    },
+    {
+      "id": "tween_001",
+      "level": "11-15",
+      "question": "What is the typical gestation period of a dog?",
+      "options": ["~31 days", "~63 days", "~90 days", "~120 days"],
+      "answerIndex": 1,
+      "image": "/static/img/examples/puppies.jpg",
+      "aid1": "It’s about two months.",
+      "aid2": "Commonly quoted: ~63 days.",
+      "lesson": "Dog gestation is ~63 days, but can vary slightly by breed/individual.",
+      "lessonImage": "/static/img/examples/mom.jpg"
+    },
+    {
+      "id": "tween_002",
+      "level": "11-15",
+      "question": "Which vitamin is toxic in excess for dogs?",
+      "options": ["Vitamin C", "Vitamin D", "Vitamin B12", "Vitamin K"],
+      "answerIndex": 1,
+      "image": "/static/img/examples/vitamins.jpg",
+      "aid1": "It’s a fat-soluble vitamin.",
+      "aid2": "Excess can cause hypercalcemia and kidney issues.",
+      "lesson": "Too much Vitamin D can be dangerous for dogs; dosing must be careful.",
+      "lessonImage": "/static/img/examples/vet.jpg"
+    },
+    {
+      "id": "over15_001",
+      "level": "16+",
+      "question": "Which parasite is *transmitted by ticks* and can affect dogs?",
+      "options": ["Giardia", "Babesia", "Tapeworm", "Roundworm"],
+      "answerIndex": 1,
+      "image": "/static/img/examples/tick.jpg",
+      "aid1": "It’s a protozoal parasite.",
+      "aid2": "Name starts with 'Ba…'",
+      "lesson": "Babesiosis can cause anemia in dogs; tick prevention is critical.",
+      "lessonImage": "/static/img/examples/tick2.jpg"
+    },
+    {
+      "id": "over15_002",
+      "level": "16+",
+      "question": "Which body condition score (BCS) range is generally considered ideal in dogs?",
+      "options": ["1–2/9", "3–4/9", "4–5/9", "7–8/9"],
+      "answerIndex": 2,
+      "image": "/static/img/examples/bcs.jpg",
+      "aid1": "Think 'middle' of the 9-point scale.",
+      "aid2": "Usually 4–5/9.",
+      "lesson": "Most charts consider 4–5/9 ideal; ribs palpable, waist visible.",
+      "lessonImage": "/static/img/examples/shape.jpg"
+    }
+  ]
+}

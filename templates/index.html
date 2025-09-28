@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Dog Quiz for Kids</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/static/css/styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🐶 Dog Knowledge Quiz</h1>
+
+    <section id="welcome">
+      <label>Name: <input id="name" type="text" placeholder="Your name"/></label>
+      <label>Level:
+        <select id="level">
+          <option value="U10">Under 10</option>
+          <option value="11-15">11–15</option>
+          <option value="16+">Over 15</option>
+        </select>
+      </label>
+      <div class="row">
+        <button id="start-quiz">Start Quiz</button>
+        <button id="start-learn">Learning Mode</button>
+      </div>
+      <p class="note">20 random questions. Hints reduce points (4 → 2 → 1). Pass is 75%.</p>
+    </section>
+
+    <section id="learning" class="hidden">
+      <div id="lesson"></div>
+      <button id="continue-to-question">Continue to Question</button>
+    </section>
+
+    <section id="quiz" class="hidden"></section>
+
+    <section id="result" class="hidden">
+      <h2 id="scoreline"></h2>
+      <p id="message"></p>
+      <div id="certificate" class="hidden">
+        <label>Email for certificate:
+          <input id="certEmail" type="email" placeholder="you@example.com"/>
+        </label>
+        <button id="sendCert">Email my certificate</button>
+        <p id="certStatus"></p>
+      </div>
+      <button id="restart">Try Again</button>
+    </section>
+  </div>
+
+  <div id="aid-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="aid-text"></span>
+      <button id="aid-close">Close</button>
+    </div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
