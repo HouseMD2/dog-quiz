@@ -1,4 +1,4 @@
-import os, json, random, smtplib, io, datetime
+import os, json, random, smtplib, io, datetime, time
 from email.message import EmailMessage
 from flask import Flask, render_template, request, jsonify, send_file
 from reportlab.lib.pagesizes import A4
@@ -116,6 +116,12 @@ def pick_questions(level: str, n: int = 20, mode: str = "quiz"):
         # keep lesson fields (not used), okay
         pass
     return out
+
+
+@app.context_processor
+def inject_asset_ver():
+    return {'ASSET_VER': int(time.time())}
+
 
 @app.route("/")
 def index():
