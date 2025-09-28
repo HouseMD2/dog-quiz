@@ -4,14 +4,15 @@
   <meta charset="utf-8"/>
   <title>Dog Quiz for Kids</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="stylesheet" href="/static/css/styles.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14'>🐶</text></svg>">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}?v={{ ASSET_VER }}">
 </head>
 <body>
   <div class="container">
     <h1>🐶 Dog Knowledge Quiz</h1>
 
     <section id="welcome">
-      <label>Name: <input id="name" type="text" placeholder="Your name"/></label>
+      <label>Name: <input id="name" type="text" placeholder="Your name"></label>
       <label>Level:
         <select id="level">
           <option value="U10">Under 10</option>
@@ -38,7 +39,7 @@
       <p id="message"></p>
       <div id="certificate" class="hidden">
         <label>Email for certificate:
-          <input id="certEmail" type="email" placeholder="you@example.com"/>
+          <input id="certEmail" type="email" placeholder="you@example.com">
         </label>
         <button id="sendCert">Email my certificate</button>
         <p id="certStatus"></p>
@@ -47,39 +48,30 @@
     </section>
   </div>
 
-  <div id="aid-modal" class="modal hidden">
-    <div class="modal-content">
-      <span id="aid-text"></span>
-      <button id="aid-close">Close</button>
-    </div>
-  </div>
-  <!-- Help / Hint Modal -->
-<div id="helpModal" class="hidden fixed inset-0 z-[1000] flex items-center justify-center">
-  <!-- overlay -->
-  <div class="absolute inset-0 bg-black/60" data-close aria-label="Close overlay"></div>
+  <!-- Single Help / Hint Modal (what app.js expects) -->
+  <div id="helpModal" class="hidden fixed inset-0 z-[1000] flex items-center justify-center">
+    <!-- overlay -->
+    <div class="absolute inset-0 bg-black/60" data-close aria-label="Close overlay"></div>
 
-  <!-- panel -->
-  <div class="relative max-w-2xl w-[90%] bg-white rounded-xl shadow-xl p-4 md:p-6"
-       role="dialog" aria-modal="true" aria-labelledby="helpTitle">
-    <button type="button" data-close
-            class="absolute right-2 top-2 rounded-md px-2 py-1 border border-gray-300 hover:bg-gray-100"
-            aria-label="Close">✕</button>
-
-    <h2 id="helpTitle" class="text-xl font-semibold mb-3">Hint</h2>
-    <div id="helpBody" class="prose max-w-none text-gray-800">Loading…</div>
-
-    <div class="mt-4 text-right">
+    <!-- panel -->
+    <div class="relative max-w-2xl w-[90%] bg-white rounded-xl shadow-xl p-4 md:p-6"
+         role="dialog" aria-modal="true" aria-labelledby="helpTitle">
       <button type="button" data-close
-              class="rounded-md px-4 py-2 border border-gray-300 hover:bg-gray-100">
-        Close
-      </button>
+              class="absolute right-2 top-2 rounded-md px-2 py-1 border border-gray-300 hover:bg-gray-100"
+              aria-label="Close">✕</button>
+
+      <h2 id="helpTitle" class="text-xl font-semibold mb-3">Hint</h2>
+      <div id="helpBody" class="prose max-w-none text-gray-800">Loading…</div>
+
+      <div class="mt-4 text-right">
+        <button type="button" data-close
+                class="rounded-md px-4 py-2 border border-gray-300 hover:bg-gray-100">
+          Close
+        </button>
+      </div>
     </div>
   </div>
-</div>
-
 
   <script defer src="{{ url_for('static', filename='js/app.js') }}?v={{ ASSET_VER }}"></script>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}?v={{ ASSET_VER }}">
-
 </body>
 </html>
